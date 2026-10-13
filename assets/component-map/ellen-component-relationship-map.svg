@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1278" height="952" viewBox="0 0 1278 952">
+  <defs>
+    <style>
+      .serif{font-family:"Songti SC","STSong",Georgia,serif;fill:#20211E}.sans{font-family:"PingFang SC","Hiragino Sans GB",sans-serif;fill:#20211E}.mono{font-family:Menlo,Monaco,monospace;fill:#20211E;letter-spacing:1.2px}.muted{fill:#696861}.paper{fill:#FFFAF0}.white{fill:#fff}.board-muted{fill:#DDE4DD}.yellow-ink{fill:#F2D977}.small{font-size:18px}.tiny{font-size:14px}.label{font-size:20px;font-weight:700}.meta{font-size:14px;font-weight:700}.card{fill:#FFFAF0;stroke:#CFC5B5;stroke-width:2}.hair{stroke:#CFC5B5;stroke-width:2}.dash{stroke:#CFC5B5;stroke-width:2;stroke-dasharray:8 7}
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="150%" height="170%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#3F301E" flood-opacity=".16"/></filter>
+    <filter id="hard" x="-20%" y="-20%" width="150%" height="170%"><feDropShadow dx="7" dy="7" stdDeviation="0" flood-color="#4D73C8" flood-opacity=".45"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#4D73C8"/></marker>
+  </defs>
+  <image xlink:href="watercolor-ui-background.png" x="0" y="0" width="1278" height="952" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- system frame -->
+  <rect x="30" y="30" width="1218" height="892" rx="8" fill="#F5F0E7" fill-opacity=".9" stroke="#20211E" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="30" y="30" width="1218" height="64" rx="8" fill="#25332B"/>
+  <circle cx="62" cy="62" r="7" fill="#E96145"/><circle cx="86" cy="62" r="7" fill="#F2D977"/><circle cx="110" cy="62" r="7" fill="#637554"/>
+  <text x="145" y="69" class="mono meta paper">ELLEN / DESIGN SYSTEM MANAGER</text>
+  <rect x="1028" y="47" width="184" height="30" rx="15" fill="#DFE8D6"/><circle cx="1050" cy="62" r="6" fill="#637554"/><text x="1068" y="68" class="sans tiny">系统状态：已同步</text>
+
+  <!-- sidebar -->
+  <rect x="30" y="94" width="198" height="828" fill="#FFFAF0" fill-opacity=".96"/>
+  <text x="62" y="145" class="serif" font-size="32" font-weight="600">水彩风</text>
+  <text x="62" y="181" class="serif" font-size="32" font-weight="600">设计笔记</text>
+  <text x="62" y="215" class="mono tiny muted">WEB UI · V1.2</text>
+  <line x1="62" y1="242" x2="194" y2="242" class="hair"/>
+  <g class="sans small">
+    <rect x="48" y="266" width="162" height="48" fill="#F7D8CB"/><text x="72" y="297" font-weight="700">总览</text><text x="188" y="297" class="mono tiny" text-anchor="end">01</text>
+    <text x="72" y="358">基础 Token</text><text x="188" y="358" class="mono tiny" text-anchor="end">12</text>
+    <text x="72" y="410">组件</text><text x="188" y="410" class="mono tiny" text-anchor="end">06</text>
+    <text x="72" y="462">组合模式</text><text x="188" y="462" class="mono tiny" text-anchor="end">04</text>
+    <text x="72" y="514">页面模板</text><text x="188" y="514" class="mono tiny" text-anchor="end">03</text>
+    <text x="72" y="566">无障碍检查</text><circle cx="186" cy="558" r="7" fill="#637554"/>
+  </g>
+  <rect x="54" y="752" width="150" height="118" fill="#25332B" transform="rotate(-2 129 811)"/>
+  <text x="74" y="786" class="mono tiny" fill="#F2D977">DESIGN RULE</text>
+  <text x="74" y="820" class="sans small paper">颜色表达语义，</text>
+  <text x="74" y="850" class="sans small paper">组件继承规则。</text>
+
+  <!-- main header -->
+  <text x="270" y="142" class="mono meta" fill="#4D73C8">SYSTEM MAP / 组件关系</text>
+  <text x="270" y="190" class="serif" font-size="42" font-weight="600">从设计决策，到一致的产品体验</text>
+  <text x="270" y="225" class="sans small muted">基础 Token 驱动组件；组件组合成模式；模式最终落到页面与交互状态。</text>
+  <g class="sans tiny" font-weight="700">
+    <rect x="972" y="135" width="74" height="32" rx="16" fill="#F7D8CB"/><text x="1009" y="157" text-anchor="middle">桌面端</text>
+    <rect x="1056" y="135" width="74" height="32" rx="16" fill="#DCE5FF"/><text x="1093" y="157" text-anchor="middle">响应式</text>
+    <rect x="1140" y="135" width="74" height="32" rx="16" fill="#DFE8D6"/><text x="1177" y="157" text-anchor="middle">可访问</text>
+  </g>
+
+  <!-- relationship canvas -->
+  <rect x="258" y="258" width="956" height="492" rx="8" fill="#FFFAF0" fill-opacity=".78" stroke="#CFC5B5" stroke-width="2" stroke-dasharray="8 7"/>
+  <text x="286" y="292" class="mono tiny muted">DEPENDENCY GRAPH · 点击节点可查看继承关系</text>
+
+  <!-- curved relationships -->
+  <path d="M470 435 C520 435 535 382 585 382" fill="none" stroke="#4D73C8" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M470 542 C525 542 535 485 585 485" fill="none" stroke="#E96145" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M470 642 C520 642 535 586 585 586" fill="none" stroke="#637554" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M755 382 C810 382 812 431 855 431" fill="none" stroke="#4D73C8" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M755 485 C810 485 812 500 855 500" fill="none" stroke="#E96145" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M755 586 C810 586 812 570 855 570" fill="none" stroke="#637554" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1035 500 C1080 500 1085 500 1116 500" fill="none" stroke="#20211E" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- foundation nodes -->
+  <text x="290" y="340" class="mono meta" fill="#E96145">01 / 基础层</text>
+  <g filter="url(#shadow)">
+    <rect x="286" y="362" width="184" height="112" rx="4" class="card"/>
+    <rect x="286" y="490" width="184" height="96" rx="4" class="card"/>
+    <rect x="286" y="602" width="184" height="82" rx="4" class="card"/>
+  </g>
+  <text x="310" y="397" class="sans label">颜色 Token</text>
+  <circle cx="320" cy="433" r="16" fill="#E96145"/><circle cx="354" cy="433" r="16" fill="#4D73C8"/><circle cx="388" cy="433" r="16" fill="#637554"/><circle cx="422" cy="433" r="16" fill="#F2D977"/>
+  <text x="310" y="525" class="sans label">字体与层级</text><text x="310" y="560" class="serif" font-size="28">Aa</text><text x="360" y="558" class="mono tiny muted">SERIF / SANS / MONO</text>
+  <text x="310" y="634" class="sans label">空间与形状</text><text x="310" y="663" class="mono tiny muted">28px GRID · R 0–4</text>
+
+  <!-- components -->
+  <text x="585" y="340" class="mono meta" fill="#4D73C8">02 / 组件层</text>
+  <g filter="url(#hard)">
+    <rect x="585" y="354" width="170" height="78" rx="4" class="card"/>
+    <rect x="585" y="448" width="170" height="78" rx="4" class="card"/>
+    <rect x="585" y="542" width="170" height="78" rx="4" class="card"/>
+  </g>
+  <rect x="610" y="376" width="118" height="35" fill="#E96145"/><text x="669" y="400" class="sans tiny paper" text-anchor="middle" font-weight="700">主要按钮 →</text>
+  <rect x="608" y="468" width="124" height="38" fill="#FFFAF0" stroke="#20211E"/><text x="621" y="493" class="sans tiny muted">输入内容…</text>
+  <rect x="608" y="561" width="124" height="42" fill="#25332B"/><text x="670" y="588" class="sans tiny paper" text-anchor="middle">证据卡 · 01</text>
+
+  <!-- patterns -->
+  <text x="855" y="340" class="mono meta" fill="#637554">03 / 模式层</text>
+  <g filter="url(#shadow)">
+    <rect x="855" y="368" width="180" height="78" rx="4" fill="#DCE5FF" stroke="#4D73C8" stroke-width="2"/>
+    <rect x="855" y="462" width="180" height="78" rx="4" fill="#F7D8CB" stroke="#E96145" stroke-width="2"/>
+    <rect x="855" y="556" width="180" height="78" rx="4" fill="#DFE8D6" stroke="#637554" stroke-width="2"/>
+  </g>
+  <text x="878" y="400" class="sans label">导航与行动</text><text x="878" y="427" class="sans tiny muted">链接 + 按钮 + 焦点</text>
+  <text x="878" y="494" class="sans label">案例叙事</text><text x="878" y="521" class="sans tiny muted">截图 + 决策 + 证据</text>
+  <text x="878" y="588" class="sans label">状态流程</text><text x="878" y="615" class="sans tiny muted">默认 / 悬停 / 焦点</text>
+
+  <!-- page output -->
+  <text x="1087" y="340" class="mono meta" fill="#20211E">04 / 页面</text>
+  <g transform="rotate(1.5 1150 500)" filter="url(#shadow)">
+    <rect x="1100" y="378" width="90" height="242" fill="#FFFAF0" stroke="#20211E" stroke-width="2"/>
+    <rect x="1113" y="394" width="64" height="18" fill="#F2D977"/>
+    <rect x="1113" y="426" width="54" height="9" fill="#20211E"/>
+    <rect x="1113" y="445" width="42" height="6" fill="#696861"/>
+    <rect x="1113" y="475" width="64" height="48" fill="#DCE5FF"/>
+    <rect x="1113" y="535" width="64" height="32" fill="#F7D8CB"/>
+    <rect x="1113" y="579" width="40" height="16" fill="#E96145"/>
+  </g>
+  <text x="1147" y="658" class="sans tiny" text-anchor="middle">作品集案例页</text>
+
+  <!-- inspector overlay -->
+  <g filter="url(#shadow)">
+    <rect x="640" y="684" width="526" height="192" rx="6" fill="#25332B"/>
+  </g>
+  <text x="670" y="720" class="mono meta yellow-ink">INSPECTOR / 选中：主要按钮</text>
+  <text x="670" y="758" class="sans small paper">继承</text><text x="762" y="758" class="mono tiny board-muted">coral · sans · spacing-12 · focus-ring</text>
+  <text x="670" y="796" class="sans small paper">状态</text>
+  <rect x="762" y="772" width="78" height="34" fill="#E96145"/><text x="801" y="795" class="sans tiny paper" text-anchor="middle">Default</text>
+  <rect x="850" y="772" width="78" height="34" fill="#FFFAF0" stroke="#F2D977"/><text x="889" y="795" class="sans tiny" text-anchor="middle">Hover</text>
+  <rect x="938" y="772" width="78" height="34" fill="#FFFAF0" stroke="#4D73C8" stroke-width="4"/><text x="977" y="795" class="sans tiny" text-anchor="middle">Focus</text>
+  <text x="670" y="844" class="sans tiny board-muted">修改基础 Token 后，组件、模式和页面同步更新。</text>
+
+  <!-- footer -->
+  <text x="258" y="902" class="mono tiny muted">WATERCOLOR DESIGN NOTES · COMPONENT RELATIONSHIP MAP</text>
+  <text x="1210" y="902" class="mono tiny muted" text-anchor="end">639 × 476 PREVIEW</text>
+</svg>

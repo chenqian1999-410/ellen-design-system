@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ellen 设计系统风格"
+  short_description: "将 Ellen 的田野笔记拼贴美学复用于视觉与界面"
+  icon_small: "./assets/ellen-mark.svg"
+  icon_large: "./assets/ellen-mark.svg"
+  brand_color: "#E96145"
+  default_prompt: "使用 $ellen-design-system，将当前内容设计成 Ellen 的编辑式田野笔记拼贴风格。"

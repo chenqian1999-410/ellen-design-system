@@ -1,0 +1,125 @@
+:root {
+  --ellen-paper: #f5f0e7;
+  --ellen-paper-raised: #fffaf0;
+  --ellen-ink: #20211e;
+  --ellen-muted: #696861;
+  --ellen-line: #cfc5b5;
+  --ellen-blue: #4d73c8;
+  --ellen-blue-soft: #dce5ff;
+  --ellen-green: #637554;
+  --ellen-green-soft: #dfe8d6;
+  --ellen-coral: #e96145;
+  --ellen-coral-soft: #f7d8cb;
+  --ellen-yellow: #f2d977;
+  --ellen-board: #25332b;
+  --ellen-shadow-paper: 0 18px 50px rgba(63, 48, 30, .13);
+  --ellen-content-max: 1180px;
+  --ellen-grid-size: 28px;
+  --ellen-font-display: Georgia, "Times New Roman", "Songti SC", serif;
+  --ellen-font-body: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --ellen-font-meta: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --ellen-font-note: "Kaiti SC", "STKaiti", cursive;
+}
+
+.ellen-canvas {
+  color: var(--ellen-ink);
+  background:
+    linear-gradient(rgba(66, 74, 66, .055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(66, 74, 66, .055) 1px, transparent 1px),
+    var(--ellen-paper);
+  background-size: var(--ellen-grid-size) var(--ellen-grid-size);
+  font-family: var(--ellen-font-body);
+  line-height: 1.65;
+}
+
+.ellen-paper {
+  background: rgba(255, 250, 240, .94);
+  border: 1px solid rgba(111, 99, 79, .24);
+  box-shadow: var(--ellen-shadow-paper);
+}
+
+.ellen-display {
+  font-family: var(--ellen-font-display);
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -.035em;
+}
+
+.ellen-eyebrow {
+  color: var(--ellen-muted);
+  font: 800 .75rem/1.2 var(--ellen-font-meta);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.ellen-field-label {
+  display: inline-flex;
+  padding: .5rem .875rem;
+  border: 1px dashed var(--ellen-ink);
+  background: var(--ellen-yellow);
+  font: 900 .75rem/1.2 var(--ellen-font-meta);
+  letter-spacing: .1em;
+  transform: rotate(-1deg);
+}
+
+.ellen-photo-mat {
+  position: relative;
+  padding: 11px 11px 38px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 20px 45px rgba(38, 36, 29, .24);
+  transform: rotate(-2deg);
+}
+
+.ellen-tape {
+  width: 92px;
+  height: 27px;
+  background: rgba(239, 216, 151, .64);
+  clip-path: polygon(3% 7%, 97% 0, 100% 86%, 5% 100%);
+  transform: rotate(-2deg);
+}
+
+.ellen-tag {
+  display: inline-flex;
+  padding: 7px 12px;
+  border: 1px solid var(--ellen-ink);
+  border-radius: 999px;
+  background: var(--ellen-paper-raised);
+  box-shadow: 2px 3px 0 var(--ellen-ink);
+  font: 700 .75rem/1.2 var(--ellen-font-meta);
+}
+
+.ellen-button {
+  display: inline-flex;
+  gap: .625rem;
+  align-items: center;
+  padding: .75rem 1.125rem;
+  border: 1.5px solid var(--ellen-ink);
+  border-radius: 3px;
+  background: var(--ellen-ink);
+  color: var(--ellen-paper);
+  font-weight: 850;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.ellen-button:hover,
+.ellen-button:focus-visible {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 6px 0 var(--ellen-coral);
+}
+
+.ellen-note {
+  color: var(--ellen-coral);
+  font-family: var(--ellen-font-note);
+  font-weight: 700;
+  transform: rotate(3deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
